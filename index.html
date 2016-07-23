@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Reshmaa Ramesh</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="keywords" content="jquery, horizontal, scrolling, scroll, smooth"/>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+        <link rel="icon" type="image/ico" href="favi.ico" >
+    </head>
+    <style>
+        a{
+            color:#fff;
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        span.reference{
+            position:fixed;
+            left:10px;
+            bottom:10px;
+            font-size:13px;
+            font-weight:bold;
+        }
+        span.reference a{
+            color:#fff;
+            text-shadow:1px 1px 1px #000;
+            padding-right:20px;
+        }
+        span.reference a:hover{
+            color:#ddd;
+            text-decoration:none;
+        }
+
+    </style>
+    <body>
+     <!--  <embed  src="C:\Users\Reshma\Desktop\8\AC.mp3" autostart="true" loop="true" width="0" height="2">-->
+
+        <div class="section black" id="section1">
+            <div class="slide-left">
+            <ul class="nav">
+                
+                <li><a href="#section2">my life</a></li>
+                <li><a href="#section3">locate me</a></li>
+                <li>Reshmaa</li>
+            </ul>
+            </div>
+             <div class="slide-left">
+                         <ul class="nav">
+
+            	<p><a href="#section2">my life</a></p>
+            	</ul>x
+            </div>
+           
+           <div class="pp">
+        </div>
+        </div>
+        <div class="section white" id="section2">
+           
+            <ul class="nav">
+                <li><a href="#section1">reshmaa </a></li>
+                <li>my life</li>
+                <li><a href="#section3">locate me</a></li>
+            </ul>
+        </div>
+        <div class="section ablack" id="section3">
+
+            <ul class="nav">
+                <li><a href="#section1">reshmaa </a></li>
+                <li><a href="#section2">my life</a></li>
+                <li>locate me</li>
+            </ul>
+            <div id="googleMap">
+       </div>
+        </div>
+         <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>      
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript">
+        $('#animatedElement').click(function() {
+		$(this).addClass("slideUp");
+	});
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    /*
+                    if you want to use one of the easing effects:
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1500,'easeInOutExpo');
+                     */
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1000);
+                    event.preventDefault();
+                });
+            });
+        </script>
+       
+    </body>
+</html>
