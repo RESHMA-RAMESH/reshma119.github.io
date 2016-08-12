@@ -133,35 +133,39 @@ jQuery.extend( jQuery.easing,
 	}
 });
 
-/*maps*/
-// var myCenter=new google.maps.LatLng(8.6698,77.7390);
-// var marker;
 
-// function initialize(){
+/* Google Maps */
 
-// var mapProp = {
-//   center:myCenter,
-//   zoom:15,
-//   mapTypeId:google.maps.MapTypeId.HYBRID
-//   };
+var myCenter=new google.maps.LatLng(8.6698,77.7390);
+var marker;
 
-// var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+function initialize(){
 
-// var marker=new google.maps.Marker({
-//   position:myCenter,
-//   animation:google.maps.Animation.BOUNCE
-//   });
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.HYBRID
+  };
 
-// marker.setMap(map);
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
 
 
-// infowindow.open(map,marker);
-// }
+infowindow.open(map,marker);
+}
 
-// google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initialize);
 
 /*maps-end*/
-/*graphs*/
+
+
+/* Graphs */
 
 var chartData = {
     "barCircleMobile":[
