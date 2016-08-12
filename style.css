@@ -1,66 +1,73 @@
-*{
-    margin:0;
-    padding:0;
-}
-body{
-    
-    margin-right: 100px;
-    background: #6E3838;
-    font-family:Segoe Script;
-    font-size: 34px;
-    font-style: italic;
-    letter-spacing:-1px;
-    width: 120005px;
-    position:absolute;
-    top:0px;
-    left:0px;
-    bottom: 0px;
-}
- li{
-    display: inline-block;
-    width:200px;
-}
-.section{
-    margin:0px;
-    bottom:0px;
-    width:4000px;
-    float:left;
-    height:100%;
-    text-shadow: 1px 1px 2px #F5E3E3;
-}
-.section h2{
-    margin:50px 0px 30px 50px;
-}
-.section p{
-    margin:20px 0px 0px 50px;
-    width:600px;
-}
-.black{
-    color: #000;
-  background-image: url(g.jpg);
-  background-size: 1368px 630px;
-  background-repeat: repeat;
-}
-.ablack{
-    color: #000;
-  background-image: url(h.jpg);
-  background-size: 1368px 630px;
-  background-repeat: repeat;
-}
-.white{
-     color: #000;
-  
-     background-image: url(i.jpg);
-  background-size: 1368px 630px;
-  background-repeat: repeat;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.section ul{
-    list-style:none;
-    margin:20px 0px 0px 550px;
+body {
+    margin-right: 100px;
+    background: #6E3838;
+    font-family: Segoe Script;
+    font-size: 34px;
+    font-style: italic;
+    letter-spacing: -1px;
+    width: 120005px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
 }
-.black ul li{
-    float:left;
+
+li {
+    display: inline-block;
+    width: 200px;
+}
+
+.section {
+    margin: 0px;
+    bottom: 0px;
+    width: 4000px;
+    float: left;
+    height: 100%;
+    text-shadow: 1px 1px 2px #F5E3E3;
+}
+
+.section h2 {
+    margin: 50px 0px 30px 50px;
+}
+
+.section p {
+    margin: 20px 0px 0px 50px;
+    width: 600px;
+}
+
+.black {
+    color: #000;
+    background-image: url(g.jpg);
+    background-size: 1368px 630px;
+    background-repeat: repeat;
+}
+
+.ablack {
+    color: #000;
+    background-image: url(h.jpg);
+    background-size: 1368px 630px;
+    background-repeat: repeat;
+}
+
+.white {
+    color: #000;
+    background-image: url(i.jpg);
+    background-size: 1368px 630px;
+    background-repeat: repeat;
+}
+
+.section ul {
+    list-style: none;
+    margin: 20px 0px 0px 550px;
+}
+
+.black ul li {
+    float: left;
     padding: 0px;
     margin: -7px;
     margin-left: 72px;
@@ -68,44 +75,53 @@ body{
     margin-right: -40px;
     color: #0B0B0B;
 }
-.black ul li a{
-    display:block;
+
+.black ul li a {
+    display: block;
     color: #ff8080;
 }
-.black ul li a:hover{
-    text-decoration:none;
-    color:pink;
+
+.black ul li a:hover {
+    text-decoration: none;
+    color: pink;
 }
-.ablack ul li{
-    float:left;
-    padding:5px;
-    margin:5px;
+
+.ablack ul li {
+    float: left;
+    padding: 5px;
+    margin: 5px;
     color: #0B0B0B;
 }
-.ablack ul li a{
-    display:block;
+
+.ablack ul li a {
+    display: block;
     color: #4ABCF7;
 }
-.ablack ul li a:hover{
-    text-decoration:none;
-    color:pink;
+
+.ablack ul li a:hover {
+    text-decoration: none;
+    color: pink;
 }
-.white ul li{
-    float:left;
-    padding:5px;
-    margin:5px;
-    color:#aaa;
+
+.white ul li {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    color: #aaa;
 }
-.white ul li a{
-    display:block;
+
+.white ul li a {
+    display: block;
     color: #59BB16;
 }
-.white ul li a:hover{
-    text-decoration:none;
-    color:pink;
+
+.white ul li a:hover {
+    text-decoration: none;
+    color: pink;
 }
+
 .pp {
- margin-left: -19px;
+    margin-left: -19px;
     margin-top: 10px;
     float: left;
     background-repeat: no-repeat;
@@ -117,84 +133,85 @@ body{
     display: block;
     -webkit-border-radius: 100px;
 }
-.pp img{
+
+.pp img {
     width: 40px;
-   opacity: 0;
-    filter: alpha(opacity=0); 
-}
-#googleMap{
-  margin-left: 656px;
-  margin-top: 238px;
-  height: 315px;
-  width: 386px;
-  display: block;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 263px;
-  border-top-left-radius: 263px;
-  transform:rotate(30deg);
-   -ms-transform:rotate(30deg); /* IE 9 */
-   -moz-transform:rotate(30deg); /* Firefox */
-   -webkit-transform:rotate(30deg); /* Safari and Chrome */
-   -o-transform:rotate(30deg); /* Opera */
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
-
- a{
-            color:#fff;
-            text-decoration:none;
-        }
-        a:hover{
-            text-decoration:underline;
-        }
-        span.reference{
-            position:fixed;
-            left:10px;
-            bottom:10px;
-            font-size:13px;
-            font-weight:bold;
-        }
-        span.reference a{
-            color:#fff;
-            text-shadow:1px 1px 1px #000;
-            padding-right:20px;
-        }
-        span.reference a:hover{
-            color:#ddd;
-            text-decoration:none;
-          }
-          .example-animation {
-                color: #FFF;
-                font-size: 60px;
-
-
+#googleMap {
+    margin-left: 656px;
+    margin-top: 238px;
+    height: 315px;
+    width: 386px;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 263px;
+    border-top-left-radius: 263px;
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -moz-transform: rotate(30deg);
+    /* Firefox */
+    -webkit-transform: rotate(30deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(30deg);
+    /* Opera */
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
+span.reference {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
 
+span.reference a {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    padding-right: 20px;
+}
 
+span.reference a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
 
-
+.example-animation {
+    color: #FFF;
+    font-size: 60px;
+}
 
 div.slide-left {
-  width:100%;
-  overflow:hidden;
+    width: 100%;
+    overflow: hidden;
 }
+
 div.slide-left p {
-  animation: slide-left 1s;
+    animation: slide-left 1s;
 }
 
 @keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
+
+
 /*graph*/
-
-
