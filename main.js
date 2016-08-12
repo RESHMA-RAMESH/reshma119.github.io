@@ -132,34 +132,37 @@ jQuery.extend( jQuery.easing,
 		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
 	}
 });
+
 /*maps*/
-var myCenter=new google.maps.LatLng(8.6698,77.7390);
-var marker;
+// var myCenter=new google.maps.LatLng(8.6698,77.7390);
+// var marker;
 
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:15,
-  mapTypeId:google.maps.MapTypeId.HYBRID
-  };
+// function initialize(){
 
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+// var mapProp = {
+//   center:myCenter,
+//   zoom:15,
+//   mapTypeId:google.maps.MapTypeId.HYBRID
+//   };
 
-var marker=new google.maps.Marker({
-  position:myCenter,
-  animation:google.maps.Animation.BOUNCE
-  });
+// var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-marker.setMap(map);
+// var marker=new google.maps.Marker({
+//   position:myCenter,
+//   animation:google.maps.Animation.BOUNCE
+//   });
+
+// marker.setMap(map);
 
 
-infowindow.open(map,marker);
-}
+// infowindow.open(map,marker);
+// }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+// google.maps.event.addDomListener(window, 'load', initialize);
+
 /*maps-end*/
 /*graphs*/
+
 var chartData = {
     "barCircleMobile":[
         {"index":0.3, "value":17436920, "fill":"#231F20", "label":"WebMd Health"},
@@ -188,6 +191,7 @@ var chartData = {
 };
 
 function drawBarCircleChart(data,target,values,labels){
+
     var w = 362,
         h = 362,
         size = data[0].value * 1.15,
@@ -244,7 +248,7 @@ function drawBarCircleChart(data,target,values,labels){
     }
 }
 
-// Animation Queue
+//Animation Queue
 setTimeout(function(){drawBarCircleChart(chartData.barCircleWeb,"#circleBar-web-chart","#circleBar-web-values","#circleBar-web-labels")},500);
 setTimeout(function(){drawBarCircleChart(chartData.barCircleMobile,"#circleBar-mobile-chart","#circleBar-mobile-values","#circleBar-mobile-labels")},800);
 
