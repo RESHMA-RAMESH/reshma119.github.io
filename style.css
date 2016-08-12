@@ -10,7 +10,7 @@ body {
     font-size: 34px;
     font-style: italic;
     letter-spacing: -1px;
-    width: 120005px;
+    width: 8000px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -38,14 +38,16 @@ li {
 .nav li a {
     color: #4abcf7;
 }
-
+#pagescrollcontent{
+  height: 4000px;
+  float: left;
+}
 .section {
     margin: 0px;
-    bottom: 0px;
-    width: 4000px;
-    float: left;
     height: 100%;
     text-shadow: 1px 1px 2px #F5E3E3;
+    width: 1360px;
+    float: left;
 }
 
 .section h2 {

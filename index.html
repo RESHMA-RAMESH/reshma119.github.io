@@ -6,15 +6,15 @@
         <meta name="keywords" content="jquery, horizontal, scrolling, scroll, smooth"/>
         <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
         <link rel="icon" type="image/ico" href="favi.ico" >
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
     </head>
 
 <body>     
 
-    <ul class="nav">             
-        <li><a href="#home">home</a></li>   
-        <li><a href="#life">my life</a></li>
-        <li><a href="#locate">locate me</a></li>
+    <ul class="nav" id="navemenu">             
+        <li><a  href="#home">home</a></li>   
+        <li><a  href="#life">my life</a></li>
+        <li><a  href="#locate">locate me</a></li>
+        <li><a  href="#svg">svg</a></li>
         <li>Reshmaa</li>
     </ul>
 
@@ -22,19 +22,33 @@
 
     <!-- Default Home Content -->
 
-    <div class="section horizontal-scrolling" id="home">          
-
+    <div class="section slide" id="home">   
 
     <div class="slide-left"><p>Hello</p></div>           
     
-    </div>
-           
+    </div> 
 
+    <!-- Life Content -->
+    <div class="section slide" id="life">
+       
+        <h2>Life</h2>
+    </div>
+
+    <!-- Locate Content -->
+    <div class="section slide" id="locate">
+
+        <h2>Locate</h2>
+       <div id="googleMap"></div>
+    </div>
+
+    <!-- SVG Contents -->
+
+    <div class="section slide" id="svg">
 
     <svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="724px" height="400px"
-	 overflow="visible" xml:space="preserve">
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+     x="0px" y="0px" width="724px" height="400px"
+     overflow="visible" xml:space="preserve">
     
     <g id="circleBarCharts">
         
@@ -54,34 +68,42 @@
         <!-- END: Web Circle Bar Chart -->
     
        </g>
-	 
+     
     </svg>
 
-    <!-- Life Content -->
-    <div class="section horizontal-scrolling" id="life">
-       
-        <h2>Life</h2>
-    </div>
-
-    <!-- Locate Content -->
-    <div class="section horizontal-scrolling" id="locate">
-
-        <h2>Locate</h2>
-       <div id="googleMap"></div>
     </div>
 
 
 </body>
 
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script><script type="text/javascript" src="js/jquery.fullPage.min.js"></script> 
+<!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript">
-$('#pagescrollcontent').fullpage({
-    sectionSelector: '.horizontal-scrolling',
-    slideSelector: '.horizontal-scrolling',
-    controlArrows: true
-    // more options here
+$(document).ready(function() {
+
+    $('ul>li>a').bind('click',function(event){
+
+        var $anchor = $(this);
+
+        console.log($anchor.context.text);
+
+        console.log($($anchor.attr('href')).offset());
+
+        $('html, body').stop().animate({
+
+            scrollLeft: $($anchor.attr('href')).offset().left
+
+        }, 1000);
+
+
+
+
+        
+
+        event.preventDefault();
+    });
+
 });
 </script>    
 </html>
