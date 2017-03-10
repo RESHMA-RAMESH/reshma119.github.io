@@ -1,0 +1,215 @@
+/*background image slider*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    
+    margin-right: 100px;
+    background: #6E3838;
+    font-family:Segoe Script;
+    font-size: 34px;
+    font-style: italic;
+    letter-spacing:-1px;
+    width: 120005px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom: 0px;
+}
+ li{
+    display: inline-block;
+    width:200px;
+}
+.section{
+    margin:0px;
+    bottom:0px;
+    width:4000px;
+    float:left;
+    height:100%;
+    text-shadow: 1px 1px 2px #F5E3E3;
+}
+.section h2{
+    margin:50px 0px 30px 50px;
+}
+.section p{
+    margin:20px 0px 0px 50px;
+    width:600px;
+}
+.black{
+    color: #000;
+  background-image: url(images/g.jpg);
+  background-size: 1368px 630px;
+  background-repeat: repeat;
+}
+.ablack{
+    color: #000;
+  background-image: url(images/h.jpg);
+  background-size: 1368px 630px;
+  background-repeat: repeat;
+}
+.white{
+     color: #000;
+  
+     background-image: url(images/i.jpg);
+  background-size: 1368px 630px;
+  background-repeat: repeat;
+}
+
+.section ul{
+    list-style:none;
+    margin:20px 0px 0px 550px;
+}
+.black ul li{
+    float:left;
+    padding: 0px;
+    margin: -7px;
+    margin-left: 72px;
+    margin-top: 10px;
+    margin-right: -40px;
+    color: #0B0B0B;
+    padding-left: 23px;
+}
+.black ul li a{
+    display:block;
+    color: #ff8080;
+    padding-left: 51px;
+}
+.black ul li a:hover{
+    text-decoration:none;
+    color:pink;
+}
+.ablack ul li{
+    float:left;
+    padding: 5px;
+    margin: 5px;
+    padding-left: 62px;
+    color: #0B0B0B;
+}
+.ablack ul li a{
+    display:block;
+    color: #4ABCF7;
+}
+.ablack ul li a:hover{
+    text-decoration:none;
+    color:pink;
+}
+.white ul li{
+    float:left;
+    padding:5px;
+    margin:5px;
+    color:#aaa;
+    padding-left: 49px;
+}
+.white ul li a{
+    display:block;
+    color: #59BB16;
+    padding-left: 20px;
+}
+.white ul li a:hover{
+    text-decoration:none;
+    color:pink;
+}
+.pp {
+ margin-left: -19px;
+    margin-top: 10px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 41px;
+    height: 41px;
+    background-image: url(m.jpg);
+    background-size: cover;
+    display: block;
+    -webkit-border-radius: 100px;
+}
+.pp img{
+    width: 40px;
+   opacity: 0;
+    filter: alpha(opacity=0); 
+}
+/*background image slider*/
+/*header menu*/
+
+ a{
+            color:#fff;
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        span.reference{
+            position:fixed;
+            left:10px;
+            bottom:10px;
+            font-size:13px;
+            font-weight:bold;
+        }
+        span.reference a{
+            color:#fff;
+            text-shadow:1px 1px 1px #000;
+            padding-right:20px;
+        }
+        span.reference a:hover{
+            color:#ddd;
+            text-decoration:none;
+          }
+          .example-animation {
+                color: #FFF;
+                font-size: 60px;
+
+
+}
+/*header menu*/
+/*tagline slider*/
+#title-animation, #ftr1-animation, #ftr2-animation, #ftr3-animation{
+    visibility: hidden;
+}
+
+  #ftr1-animation{
+     padding-left: 550px;
+      padding-top: 380px;
+  }
+#ftr2-animation{
+     padding-left: 420px;
+      padding-top: 8px;
+  }
+
+.slideLeft{
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;  
+
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out; 
+
+    /* Keep animation visible after animation finishes */
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;    
+}
+
+#ftr2-animation {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#ftr3-animation {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes slideLeft {
+    0% {transform: translateX(150%); visibility: visible;}   
+    100% {transform: translateX(0%); visibility: visible;}
+}
+
+@-webkit-keyframes slideLeft {
+    0% {-webkit-transform: translateX(150%); visibility: visible;}       
+    100% {-webkit-transform: translateX(0%); visibility: visible;}
+}
+/*tagline slider*/
+
+
+

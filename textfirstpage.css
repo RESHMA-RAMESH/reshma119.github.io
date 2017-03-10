@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#title-animation, #ftr1-animation, #ftr2-animation, #ftr3-animation{
+    visibility: hidden;
+}
+
+  #ftr1-animation{
+     padding-left: 550px;
+      padding-top: 380px;
+  }
+#ftr2-animation{
+     padding-left: 420px;
+      padding-top: 8px;
+  }
+
+.slideLeft{
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;  
+
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out; 
+
+    /* Keep animation visible after animation finishes */
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;    
+}
+
+#ftr2-animation {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#ftr3-animation {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes slideLeft {
+    0% {transform: translateX(150%); visibility: visible;}   
+    100% {transform: translateX(0%); visibility: visible;}
+}
+
+@-webkit-keyframes slideLeft {
+    0% {-webkit-transform: translateX(150%); visibility: visible;}       
+    100% {-webkit-transform: translateX(0%); visibility: visible;}
+}
+</style>
+</head>
+<body>
+<!-- FOOTER TAGLINE -->
+        <div id="ftr-tagline">
+            <div id="ftr1-animation" class="slideLeft">
+                <div class="one-third">
+                    <div class="one-call">
+                        One Call...
+                    </div><!-- .one-call -->
+                </div><!-- .one-third -->
+            </div><!-- #ftr1-animation -->
+            <div id="ftr2-animation" class="slideLeft">
+                <div class="one-third">
+                    <div class="one-contact">
+                        One Contact...
+                    </div><!-- .one-contact -->
+                </div><!-- .one-third -->
+            </div><!-- #ftr2-animation -->
+            <div id="ftr3-animation" class="slideLeft">
+                <div class="one-third last">
+                    <div class="one-culture">
+                        One Culture...
+                    </div> <!-- .one-contact -->
+                </div><!-- .one-third -->
+            </div> <!-- #ftr3-animation -->
+        </div> <!-- #ftr-tagline -->
+        <!-- END FOOTER TAGLINE -->
+        </body>
+        </html>
