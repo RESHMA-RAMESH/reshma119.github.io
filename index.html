@@ -3,54 +3,65 @@
     <head>
         <title>Reshmaa Ramesh</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="keywords" content="jquery, horizontal, scrolling, scroll, smooth"/>
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
         <link rel="icon" type="image/ico" href="favi.ico" >
-        
-
+       <link href='//fonts.googleapis.com/css?family=Vampiro One' rel='stylesheet'>
     </head>
+
     <body>
   
         <div class="section black" id="section1">
-       <span>
+      
             <ul class="nav">
+            <div style="
+    padding-left: 64px;
+    padding-top: 7px;
+    word-spacing: 39px;
+    margin-left: 36px;">
+                <a href="#section2">Expertise</a>
+               <a href="#section3">Link-up</a>
+              Reshma
                 
-                <li><a href="#section2">Expertise</a></li>
-                <li><a href="#section3">Find me</a></li>
-                <li>Reshmaa</li>
+            </div>
             </ul>
-            </span>
 
-            <div>
-                <!-- FOOTER TAGLINE -->
+
+             <section>
+            <!-- FOOTER TAGLINE -->
+           
         <div id="ftr-tagline">
             <div id="ftr1-animation" class="slideLeft">
                 <div class="one-third">
                     <div class="one-call">
-                       Reshma Ramesh
+                      Reshma Ramesh
                     </div><!-- .one-call -->
                 </div><!-- .one-third -->
             </div><!-- #ftr1-animation -->
             <div id="ftr2-animation" class="slideLeft">
                 <div class="one-third">
                     <div class="one-contact">
-                  Tech Enthusiasist from India 
+                      Tech Enthusiasist from India
                     </div><!-- .one-contact -->
                 </div><!-- .one-third -->
             </div><!-- #ftr2-animation -->
-          
+            
         </div> <!-- #ftr-tagline -->
         <!-- END FOOTER TAGLINE -->
-            </div>
      
-        
+        </section>
+
+
+
+
+         
          </div> 
+
 
 
         <div class="section white" id="section2">
            
             <ul class="nav">
-                <li><a href="#section1">Reshmaa </a></li>
+                <li><a href="#section1">Reshma</a></li>
                 <li>Expertise</li>
                 <li><a href="#section3">Find me</a></li>
             </ul>
@@ -59,7 +70,7 @@
         <div class="section ablack" id="section3">
 
             <ul class="nav">
-                <li><a href="#section1">Reshmaa </a></li>
+                <li><a href="#section1">Reshma</a></li>
                 <li><a href="#section2">Expertise</a></li>
                 <li>Find me</li>
             </ul>
@@ -69,19 +80,10 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>      
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript">
-        $('#animatedElement').click(function() {
-		$(this).addClass("slideUp");
-	});
-            $(function() {
+                    $(function() {
                 $('ul.nav a').bind('click',function(event){
                     var $anchor = $(this);
-                    /*
-                    if you want to use one of the easing effects:
-                    $('html, body').stop().animate({
-                        scrollLeft: $($anchor.attr('href')).offset().left
-                    }, 1500,'easeInOutExpo');
-                     */
-                    $('html, body').stop().animate({
+                        $('html, body').stop().animate({
                         scrollLeft: $($anchor.attr('href')).offset().left
                     }, 1000);
                     event.preventDefault();

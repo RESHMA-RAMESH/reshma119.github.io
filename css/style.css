@@ -4,10 +4,9 @@
     padding:0;
 }
 body{
-    
     margin-right: 100px;
-    background: #6E3838;
-    font-family:Segoe Script;
+    background: rgba(4, 167, 111, 0.75);
+     font-family: 'Vampiro One';
     font-size: 34px;
     font-style: italic;
     letter-spacing:-1px;
@@ -68,14 +67,15 @@ body{
     margin-top: 10px;
     margin-right: -40px;
     color: #0B0B0B;
+    display: inline;
     padding-left: 23px;
 }
-.black ul li a{
-    display:block;
+.black ul  a{
+    display:inline;
     color: #ff8080;
     padding-left: 51px;
 }
-.black ul li a:hover{
+.black ul  a:hover{
     text-decoration:none;
     color:pink;
 }
@@ -128,6 +128,8 @@ body{
    opacity: 0;
     filter: alpha(opacity=0); 
 }
+
+
 /*background image slider*/
 /*header menu*/
 
@@ -160,9 +162,15 @@ body{
 
 
 }
+.black ul a {
+    padding-right: 10px
+    word-spacing
+}
+
+
 /*header menu*/
 /*tagline slider*/
-#title-animation, #ftr1-animation, #ftr2-animation, #ftr3-animation{
+#title-animation, #ftr1-animation, #ftr2-animation{
     visibility: hidden;
 }
 
@@ -195,10 +203,7 @@ body{
     animation-delay: 1.5s;
 }
 
-#ftr3-animation {
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-}
+
 
 @keyframes slideLeft {
     0% {transform: translateX(150%); visibility: visible;}   
