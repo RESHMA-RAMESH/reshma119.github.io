@@ -6,7 +6,7 @@
 body{
     margin-right: 100px;
     background: rgba(4, 167, 111, 0.75);
-     font-family: 'Vampiro One';
+     font-family:'Satisfy', cursive;
     font-size: 34px;
     font-style: italic;
     letter-spacing:-1px;
@@ -15,6 +15,12 @@ body{
     top:0px;
     left:0px;
     bottom: 0px;
+}
+.topmenu{
+    padding-top: 20px;
+    word-spacing: 74px;
+    padding-left: 40px;
+
 }
  li{
     display: inline-block;
@@ -88,17 +94,17 @@ body{
 }
 .ablack ul li a{
     display:block;
-    color: #4ABCF7;
+    color: #e77db7;
 }
 .ablack ul li a:hover{
     text-decoration:none;
-    color:pink;
+    color:#df8c53;
 }
 .white ul li{
     float:left;
     padding:5px;
     margin:5px;
-    color:#aaa;
+    color:#000;
     padding-left: 49px;
 }
 .white ul li a{
@@ -170,25 +176,40 @@ body{
 
 /*header menu*/
 /*tagline slider*/
-#title-animation, #ftr1-animation, #ftr2-animation{
+#title-animation, #ftr1-animation, #ftr2-animation, #ftr3-animation, #ftr4-animation,#ftr5-animation{
     visibility: hidden;
 }
 
   #ftr1-animation{
-     padding-left: 550px;
-      padding-top: 380px;
-  }
-#ftr2-animation{
-     padding-left: 420px;
-      padding-top: 8px;
-  }
-
+     padding-left: 1050px;
+      padding-top: 105px;
+      padding-bottom: 20px;
+    }
+    #ftr2-animation{
+        padding-left: 900px;
+        padding-top: 8px;
+        padding-bottom: 20px;
+    }
+    #ftr3-animation{
+        padding-left: 930px;
+        padding-top: 8px;
+        padding-bottom: 20px;
+    }
+    #ftr4-animation{
+        padding-left: 952px;
+        padding-top: 8px;
+        padding-bottom: 20px;
+    }
+     #ftr5-animation{
+        padding-left: 1048px;
+        padding-top: 8px;
+    }
 .slideLeft{
     animation-name: slideLeft;
     -webkit-animation-name: slideLeft;  
 
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
+    animation-duration: 2s; 
+    -webkit-animation-duration: 2s;
 
     animation-timing-function: ease-in-out; 
     -webkit-animation-timing-function: ease-in-out; 
@@ -202,8 +223,18 @@ body{
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
-
-
+#ftr3-animation {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+#ftr4-animation {
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+#ftr5-animation {
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+}
 
 @keyframes slideLeft {
     0% {transform: translateX(150%); visibility: visible;}   
